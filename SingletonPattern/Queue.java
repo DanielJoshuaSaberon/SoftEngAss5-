@@ -13,7 +13,7 @@ public class Queue {
     private Queue() {
     }
 
-    public static Queue getInstance() {
+    public static synchronized Queue getInstance() {
         if (instance == null) {
             instance = new Queue();
         }
